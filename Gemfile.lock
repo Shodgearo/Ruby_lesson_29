@@ -69,9 +69,9 @@ DEPENDENCIES
   sinatra
   sinatra-activerecord
   sinatra-contrib
-  sinatra-reloader (~> 1.0)
+  sinatra-reloader
   sqlite3
   tux
 
 BUNDLED WITH
-   1.17.3
+   2.0.1
