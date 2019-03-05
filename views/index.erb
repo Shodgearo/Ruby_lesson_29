@@ -1,1 +1,6 @@
 <h2>Список наших парикмахеров</h2>
+<% @barbers.each do |barer|%>
+	<p>
+		<%=	barer.name %>
+	</p>
+<% end %>
