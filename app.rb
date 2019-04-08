@@ -6,6 +6,10 @@ require 'sinatra/activerecord'
 set :database, "sqlite3:bar.db"
 
 class Client < ActiveRecord::Base
+	validates :name, presence: true
+	validates :phone, presence: true
+	validates :date, presence: true
+	validates :color, presence: true
 end
 
 class Barber < ActiveRecord::Base
