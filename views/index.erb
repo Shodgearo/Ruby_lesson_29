@@ -1,6 +1,6 @@
 <h2>Список наших парикмахеров</h2>
 <% @barbers.each do |barer|%>
 	<p>
-		<%=	barer.name %>
+		<a href="/barer/<%= barer.id %>"><%= barer.name %>
 	</p>
 <% end %>
