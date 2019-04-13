@@ -19,7 +19,7 @@ class Contact < ActiveRecord::Base
 end
 
 before do
-	@barbers = Barber.all
+	@barber = Barber.all
 end
 
 get '/' do
@@ -27,7 +27,6 @@ get '/' do
 end
 
 get '/visit' do
-	@barber = Barber.all
 	@client = Client.new
 	erb :visit
 end
