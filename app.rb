@@ -27,6 +27,7 @@ get '/' do
 end
 
 get '/visit' do
+	@barber = Barber.all
 	@client = Client.new
 	erb :visit
 end
